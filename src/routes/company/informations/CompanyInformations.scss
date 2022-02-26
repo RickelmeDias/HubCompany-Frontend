@@ -1,0 +1,18 @@
+@import "../../../styles/global.variables.scss";
+
+div#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+h2, h4, p {
+    text-align: left !important;
+}
+
+.place-icon {
+    color: $dark-blue-pallet !important;
+}

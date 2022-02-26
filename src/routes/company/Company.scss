@@ -1,0 +1,39 @@
+@import "../../styles/global.variables.scss";
+
+h1.h2 {
+    color: $dark-blue-pallet;
+}
+
+div#card-company {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#btn-more-about {
+    background-color: $dark-blue-pallet !important;
+    width: 100vw !important;
+    min-width: 200px;
+    max-width: 250px;
+    color: $white-soft-pallet;
+}
+
+#btn-add {
+    border: 0.1rem solid $dark-blue-pallet !important;
+    border-radius: 0.3rem;
+    background: transparent;
+    width: 100vw !important;
+    min-width: 200px;
+    max-width: 250px;
+    color: $dark-blue-pallet;
+}
+
+.card-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

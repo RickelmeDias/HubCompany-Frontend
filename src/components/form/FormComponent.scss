@@ -1,0 +1,28 @@
+@import "../../styles/global.variables.scss";
+
+label {
+    left: 0.75rem !important;
+}
+
+div#form-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 500px !important;
+    flex-direction: column;
+}
+
+input {
+    text-align: left !important;
+}
+div.alert {
+    width: 100%;
+}
+
+#create-account-button {
+    background-color: #1D253C !important;
+    width: 90% !important;
+    min-width: 200px;
+    max-width: 250px;
+    color: $white-soft-pallet;
+}

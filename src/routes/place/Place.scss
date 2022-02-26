@@ -1,0 +1,36 @@
+@import "../../styles/global.variables.scss";
+
+div#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1.h2 {
+    color: $dark-blue-pallet;
+}
+
+
+#list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $dark-blue-pallet;
+    border-radius: 5px;
+    #place-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-blue-pallet;
+    }
+
+    #icon-arrow {
+        margin-left: 15px;
+    }
+}
+* {
+    text-decoration: none !important;
+    color: $dark-blue-pallet;
+    text-align: center;   
+}

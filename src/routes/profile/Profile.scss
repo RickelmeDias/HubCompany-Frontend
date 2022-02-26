@@ -1,0 +1,44 @@
+@import "../../styles/global.variables.scss";
+
+#wrapper {
+    display: flex!important;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    h1 {
+        color: $dark-blue-pallet;
+    }
+}
+
+#card {
+    * {
+        color: $white-soft-pallet;
+    }
+    display: flex;
+    width: 70vw;
+    max-width: 500px;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(134, 130, 130, 0.116), rgba(48, 41, 41, 0.15)), 
+    linear-gradient(rgba(47, 47, 54, 0.541), rgba(55, 53, 71, 0.336)),
+    url('https://wallpaperaccess.com/full/346806.jpg');
+    box-shadow: 0 8px 32px 0 rgba(40, 42, 71, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    #avatar {
+        width: 100px;
+        height: 100px;
+    }
+    #box {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+}
