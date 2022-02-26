@@ -58,10 +58,21 @@ const App = () => {
     }
   }, [execEffect])
 
+  const closeMessage = () => {
+    const alert: any = document.getElementById('alert-message');
+    alert.remove();
+  }
+  
   return (
     <div className="app" >
+      <div className="alert flex-wrap alert-warning alert-dismissible fade show d-flex justify-content-center align-items-center" id="alert-message" role="alert">
+        <strong>This is an example project!</strong>&nbsp;You can see more about my projects and exemples on my github:&nbsp;
+         <a href='https://github.com/RickelmeDias'>(https://github.com/RickelmeDias)</a>
+        <button onClick={closeMessage} className="close" data-dismiss="alert" aria-label="Close" id="button-dimiss">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       <Header logged={authData != null ? true : false} />
-
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home logged={authData != null ? true : false} />} />

@@ -95,7 +95,7 @@ function Place() {
                   ) 
                   : 
                   (
-                    <div>
+                    <div className="d-flex">
                       {
                         (CEP !== null && CEP.data !== null) ? (
                           <>
@@ -117,9 +117,6 @@ function Place() {
                     mainResponsible !== null &&
                     mainResponsible.data.name
                     }
-                  </p>
-                  <p>
-                    {responsePlace.body.data.responsibles}
                   </p>
               </div>
             </div>
