@@ -3,7 +3,7 @@ import axios from "axios";
 const getToken = () => {return localStorage.getItem('token')};
 
 const Api = axios.create({
-  baseURL: "http://localhost:3333",
+  baseURL: "https://hubcompany-backend.herokuapp.com",
   headers: {
   Authorization : `Bearer ${getToken()}`,
   }
